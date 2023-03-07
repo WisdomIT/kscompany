@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import { size, device } from '@/styles/global-style';
-import { Scrollbars } from 'react-custom-scrollbars';
 
-const BackDiv = styled(Scrollbars)`
+const BackDiv = styled.div`
     display: block;
     position: fixed;
     top: 0;
