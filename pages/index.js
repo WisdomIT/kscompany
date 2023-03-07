@@ -6,6 +6,7 @@ import Background from '@/components/background';
 import Foreground from '@/components/foreground';
 import { device } from '@/styles/global-style';
 import { MobileBr } from '@/components/br';
+import { useState, useEffect } from 'react';
 
 const Video = styled.video`
   width: calc(100% + 40px);
@@ -14,6 +15,18 @@ const Video = styled.video`
   object-fit: cover;
   filter: brightness(0.7) blur(10px);
 `
+
+const Image = styled.img`
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: opacity 1s;
+`
+
 const Pattern = styled.img`
   position: absolute;
   top: 0px;
@@ -95,6 +108,11 @@ const ForegroundDiv = styled.div`
 export default function Home() {
 
     const router = useRouter()
+    const [imageon, setImageon] = useState(true)
+
+    useEffect(() => {
+      setTimeout(() => setImageon(false), 1500)
+    },[])
 
     return (
     <>
@@ -109,6 +127,7 @@ export default function Home() {
           <Video poster="/images/welcome.png" controls={false} autoPlay={true} muted={true} loop={true} playsInline={true}>
             <source src="/images/welcome.mp4" type="video/mp4" />
           </Video>
+          <Image style={{opacity: imageon ? 1 : 0}} src="/images/welcome.png" />
           <Pattern src="/images/pattern.png" />
         </Background>
         <Foreground>
