@@ -350,7 +350,7 @@ const JobsList = (props) => {
             opacity: isInView ? 1 : 0
         }}>
         <JobsListTitle><JobsListIcon src={`/images/emoji/${props.icon}.png`} />{props.title}</JobsListTitle>
-        {props.list.map(e => <JobsListLi>{e}</JobsListLi>)}
+        {props.list.map((e, i) => <JobsListLi key={i}>{e}</JobsListLi>)}
     </JobsListDiv>
 }
 

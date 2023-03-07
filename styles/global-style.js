@@ -65,8 +65,14 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     ::-webkit-scrollbar {
-        width: 10px;  /* 세로축 스크롤바 길이 */
-        height: 10px;  /* 가로축 스크롤바 길이 */
+        width: 5px;  /* 세로축 스크롤바 길이 */
+        height: 5px;  /* 가로축 스크롤바 길이 */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--white20);
+        border: 1px solid var(--black10);
+        border-radius: 10px;
     }
 `
 
