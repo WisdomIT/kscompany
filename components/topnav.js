@@ -12,7 +12,7 @@ const Nav = styled.div`
     width: 100%;
     background-color: var(--white10);
     backdrop-filter: var(--blur);
-    border-bottom: 1px solid var(--white10);
+    border-bottom: 1px solid ${props => props.brand ? 'var(--black10)' : 'var(--white10)' };
     text-align: center;
     transition: .2s all;
     z-index: 10;
@@ -152,8 +152,10 @@ const Topnav = (props) => {
 
     return (
     <Nav style={{
-        height: mobileMenu ? "100%" : ""
-    }}><NavCenter>
+            height: mobileMenu ? "100%" : ""
+        }}
+        brand={path === '/brand'}
+    ><NavCenter>
         <Logo src={ windowDimensions.width > size.tablet ? "/images/logo.png" : "/images/logo_mobile.png" } onClick={() => changePage('/')}></Logo>
         <Navul>
             <Navli active={path === '/'} brand={path === '/brand'} onClick={() => changePage('/')}>WELCOME</Navli>

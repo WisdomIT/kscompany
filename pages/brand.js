@@ -16,7 +16,7 @@ const BackgroundColor = styled.div`
     background-color: white;
 `
 
-export default function Home() {
+export default function Brand() {
 
   return (
     <>
@@ -32,7 +32,7 @@ export default function Home() {
         </Background>
         <Foreground>
           <Main />
-          <Brand />
+          <Brands />
           <Footer />
         </Foreground>
       </MotionMain>
@@ -92,7 +92,7 @@ const Main = (props) => {
     </MainSection>
 }
 
-const Brand = (props) => {
+const Brands = (props) => {
   return <BransListGrid>
   <BrandList url="https://smartstore.naver.com/ojahhouse/products/5114667288" img="ddasuwin" title="따스윈" body="심한 소음과 건조함이 가장 큰 문제인 온풍기 시장에서 ‘건조함 없고, 소음없이’ 우리 가족의 몸을 따스하게 녹여주는 프리미엄 난방가전 브랜드 입니다. 따스윈은 모든 분들이 안전하고, 소음 없이 편안하게 사용하시길 바라는 마음으로 끊임 없이 노력하고 연구합니다." />
   <BrandList url="https://smartstore.naver.com/ojahhouse/products/5821333069" img="hwangto" title="황토불이" body="황토불이는 지친 현대인들의 피로를 풀어주기 위해 탄생했습니다. 전자파의 위협, 알 수 없는 찜질 효과 등 저가형 제품들이 넘치는 찜질기 시장에서, 전기 열선을 이용한 온수 찜질이 아닌, 온수를 쉬지 않고 순환해 황토를 데우는 지속적인 온열 찜질로 지친 일상에 피로를 풀어줍니다." />

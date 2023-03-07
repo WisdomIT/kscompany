@@ -5,6 +5,8 @@ import { useInView } from 'framer-motion';
 
 const Icon = styled.img`
 
+    vertical-align: middle;
+
     @media ${device.mobile} {
         margin-right: 2px;
         height: 12px;
