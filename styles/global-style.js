@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
         --blue: #04175C;
         --linear-blue: linear-gradient(180deg, #000 0%, #04175C 100%);
         --linear-black1: linear-gradient(180deg, #000 0%, #111 100%);
-        --linear-black2: linear-gradient(180deg, #000 0%, #111 100%);
+        --linear-black2: linear-gradient(180deg, #000 0%, #222 100%);
         --blur: blur(30px);
     }
     

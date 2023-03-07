@@ -13,14 +13,6 @@ const BackDiv = styled(Scrollbars)`
     overflow-x: hidden !important;
     overflow-y: auto;
     text-align: center;
-
-    @media ${device.mobile} {
-        padding-top: 60px; 
-    }
-
-    @media ${device.tablet} {
-        padding-top: 80px; 
-    }
 `
 
 const ForeDiv = styled.div`
@@ -32,10 +24,12 @@ const ForeDiv = styled.div`
     @media ${device.mobile} {
         width: 100%;
         padding: 0px 30px;
+        padding-top: 60px; 
     }
 
     @media ${device.tablet} {
         width: 750px;
+        padding-top: 80px; 
     }
 
     @media ${device.desktop} {

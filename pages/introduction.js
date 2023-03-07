@@ -16,7 +16,7 @@ const BackgroundColor = styled.div`
     background: var(--linear-blue);
 `
 
-export default function Home() {
+export default function Introduction() {
   return (
     <>
       <Head>
