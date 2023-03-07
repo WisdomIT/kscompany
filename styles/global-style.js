@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyles = createGlobalStyle`
     :root {
         --black: #000;
+        --gray: #111;
         --white: #FFF;
         --white5: rgba(255,255,255,0.05);
         --white10: rgba(255,255,255,0.1);
@@ -61,6 +62,11 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         background: var(--black);
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;  /* 세로축 스크롤바 길이 */
+        height: 10px;  /* 가로축 스크롤바 길이 */
     }
 `
 

@@ -9,6 +9,7 @@ import SectionName from '@/components/sectionname';
 import { useInView } from 'framer-motion';
 import { device } from '@/styles/global-style';
 import { MobileBr, DesktopBr } from '@/components/br';
+import Footer from '@/components/footer';
 
 const BackgroundColor = styled.div`
     width: 100%;
@@ -33,6 +34,7 @@ export default function Introduction() {
             <Main />
             <Jobs />
             <Partners />
+            <Footer />
         </Foreground>
       </MotionMain>
     </>
@@ -375,6 +377,7 @@ const Partners = (props) => {
             <PartnersLogo brand="aliexpress" />
             <PartnersLogo brand="hanil" />
             <PartnersLogo brand="clapa" />
+            <PartnersLogo brand="hanvit" />
             <PartnersLogo brand="guerilla" />
             <PartnersLogo brand="bodyprime" />
             <PartnersLogo brand="methin" />

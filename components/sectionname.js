@@ -19,8 +19,9 @@ const Icon = styled.img`
 const Div = styled.div`
 
     display: inline-block;
-    color: var(--white);
+    color: ${props => props.white ? 'var(--black)' : 'var(--white)'};
     background-color: var(--white10);
+    border: ${props => props.white ? '1px solid var(--black10)' : ''};
     font-weight: 600;
     width: fit-content;
     transition: all .5s;
@@ -48,7 +49,7 @@ const SectionName = (props) => {
 return <Div ref={ref} style={{
             transform: isInView ? "none" : "translateY(50px)",
             opacity: isInView ? 1 : 0
-        }}>
+        }} white={props.white}>
     <Icon src={`/images/emoji/${props.icon}.png`} />{props.name}
 </Div>
 }
