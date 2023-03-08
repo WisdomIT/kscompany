@@ -658,6 +658,7 @@ const ContactFormSelectList = styled.div`
   backdrop-filter: var(--blur);
   left: 0px;
   width: 100%;
+  overflow: hidden;
   z-index: ${ props => props.active ? '2' : '-1' };
   opacity: ${ props => props.active ? '1' : '0' };
   transition: all .2s;
@@ -705,6 +706,7 @@ const ContactFormBody = styled.textarea`
   color: #fff;
   width: 100%;
   resize: none;
+  transition: all .2s;
 
   @media ${device.mobile} {
     padding: 24px;
