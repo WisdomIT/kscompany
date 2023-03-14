@@ -327,7 +327,7 @@ const Consulting = (props) => {
       <ConsultingList icon="bullseye" title="실제 타겟 구축" body="시장조사를 통해 분석된 데이터를 토대로 가장 이상적인 타겟을 설정합니다." />
       <ConsultingList icon="crystal_ball" title="마케팅 축 구축" body="소비자 욕구에 맞춘 대안을 설계하고, 어떻게 접근할 것인가에 대해 KS만의 메뉴얼로 재구축합니다." />
       <ConsultingList icon="magic_wand" title="메리트 리뉴얼" body="데이터를 통해 구축된 새로운 타겟에 맞춰 실제 제품의 기능 및 가치를 리뉴얼 하고 재구성합니다." />
-      <ConsultingList icon="paintbrush" title="시장조사" body="솔루션에 맞춰 디자인을 리뉴얼합니다." />
+      <ConsultingList icon="paintbrush" title="디자인 리뉴얼" body="솔루션에 맞춰 디자인을 리뉴얼합니다." />
     </ConsultingListScroll>
   </ConsultingSection>
 }
